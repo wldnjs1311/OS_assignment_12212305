@@ -1,10 +1,4 @@
 #!/bin/sh
-
-echo "*********OSS1 - Project1*********"
-echo "*     StudentID : 12212305      *"
-echo "*     Name : Yoon Jiwon         *"
-echo "*********************************"
-
 if [ $# -lt 3 ]; then
     echo "usage: ./2024-OSS-Project1.sh file1 file2 file3"
     exit 1
@@ -12,6 +6,11 @@ elif [[ $1 != *.csv ]] || [[ $2 != *.csv ]] || [[ $3 != *.csv ]]; then
     echo "error: Invalid file format."
     exit 1
 fi
+
+echo "*********OSS1 - Project1*********"
+echo "*     StudentID : 12212305      *"
+echo "*     Name : Yoon Jiwon         *"
+echo "*********************************"
 
 answer=0
 while [ $answer != 7 ]
